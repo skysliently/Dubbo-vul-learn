@@ -17,4 +17,4 @@ def run(dip, dport):
     sendEvilObjData(sock)
 
 
-run("10.201.93.100", 12345)
+run("10.xx.xx.xx", 12345)

